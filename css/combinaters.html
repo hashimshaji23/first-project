@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* descendant combinater */
+        /* .main p{
+            color: brown;
+        } */
+
+        /* child cominater */
+        /* .main> p{
+            color: cyan;
+        } */
+
+         /* adjecent sybling combinater */
+        .main+ p{
+            color: green;
+        } 
+   
+        /* genaral sybling combinater */
+        /* .main~ p{
+            color: blue;
+        } */
+    </style>
+</head>
+<body>
+       
+    <div class="main">
+       <p>Lorem ipsum dolor sit.</p>
+       <p>Lorem ipsum dolor sit.</p>
+       <div>
+         <p>Lorem ipsum dolor sit.</p>
+       </div>
+    </div>
+
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit.</p>
+    <h2>heading</h2>
+
+    
+</body>
+</html>
