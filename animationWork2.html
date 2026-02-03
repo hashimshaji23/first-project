@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: cadetblue;
+            position: relative;
+            animation-name: main;
+            animation-duration:5s ;
+            animation-iteration-count: infinite;
+            border-radius:90px ;
+        }
+        @keyframes main{
+            0%{
+                top: 0px;
+                left: 0px;
+                background-color: cadetblue;
+            }
+            50%{
+                top: 100px;
+                left: 0px;
+                background-color: lightblue;
+            }
+            100%{
+                top: 0px;
+                left: 0px;
+                background-color: cadetblue;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+
+    </div>
+</body>
+</html>
