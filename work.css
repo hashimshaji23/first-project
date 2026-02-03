@@ -1,0 +1,9 @@
+body{
+    background-image: url(https://png.pngtree.com/background/20230611/original/pngtree-three-trees-stand-in-front-of-a-grass-overcast-cloudy-sky-picture-image_3167327.jpg);
+    background-repeat: repeat;
+}
+.navbar{
+    width: 100%;
+    height: 70px;
+    /* background-color: blue; */
+}
