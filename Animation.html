@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: cornflowerblue;
+            animation-name: changeClr;
+            animation-duration: 5s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 2s;
+            animation-iteration-count: 2;
+            animation-direction:alternate;
+            animation-fill-mode:forwards;
+            /* animation-play-state: paused; */
+        }
+        @keyframes changeClr{
+             0%{
+                background-color: yellowgreen;
+             }
+             50%{
+                background-color: chocolate;
+                width: 200px;
+             }
+             100%{
+                background-color: indianred;
+                width: 200px;
+             }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+
+    </div>
+</body>
+</html>
