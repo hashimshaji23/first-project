@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+        }
+        body{
+            overflow-x: hidden;
+
+        }
+        nav{
+            display:flex;
+            justify-content: space-between;
+            background-color: pink;
+            color: white;
+            padding: 5px;
+            width: 100%;
+            position: relative;
+        }
+        input{
+            height: 24px;
+            margin-top: 10px;
+        }
+        button{
+            height: 29px;
+            margin-top: 10px;
+        }
+        .nav-items{
+             display: flex;
+             column-gap: 7px;
+        }
+        #menu-toggle{
+            display: none;
+        }
+        .hamburger{
+            display:none;
+            font-size: 25px;
+        }
+        @media screen and (max-width:600px) {
+            .hamburger{
+                display: flex;
+                padding: 10px;
+            }
+            .nav-items{
+                display: none;
+                flex-direction: column;
+                width: 100px;
+                position: absolute;
+                top: 60px;
+                right: 0;
+                padding: 5px 20px;
+                background-color: rgb(232, 222, 223);
+            }
+            #menu-toggle:checked~ .nav-items{
+                display: flex;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <p class="logo">logo</p>
+        <input type="checkbox" name="" id="menu-toggle">
+        <label for="menu-toggle" class="hamburger">
+            ☰
+        </label>
+        <div class="nav-items">
+            <input type="text" placeholder="search" name="" id=""> <button>search</button>
+            <p>Home</p>
+            <p>About</p>
+            <p>Contact</p>
+        </div>
+    </nav>
+</body>
+</html>
